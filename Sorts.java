@@ -41,5 +41,8 @@ public class Sorts{
         // for (int i = 0; i < 5; i++) {
         //     System.out.print(b[i] + " ");
         // }
+
+        // int[] c = new int[0];
+        // bubbleSort(c);
     }
   }
