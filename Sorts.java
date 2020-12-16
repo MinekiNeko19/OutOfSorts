@@ -47,15 +47,27 @@ public class Sorts{
         // int[] c = new int[0];
         // bubbleSort(c);
 
-        int[] d = new int[5];
-        Random data1 = new Random(); // no seed
-        for (int i = 0; i < 5; i++) {
-            d[i]=data1.nextInt();
-            System.out.println(d[i]+" ");
-        }
-        bubbleSort(d);
-        for (int i = 0; i < 5; i++) {
-                System.out.print(d[i] + " ");
-            }
+        // int[] d = new int[5];
+        // Random data1 = new Random(); // no seed
+        // for (int i = 0; i < 5; i++) {
+        //     d[i]=data1.nextInt();
+        //     System.out.println(d[i]+" ");
+        // }
+        // bubbleSort(d);
+        // for (int i = 0; i < 5; i++) {
+        //         System.out.print(d[i] + " ");
+        //     }
+
+        // int[] e = new int[5];
+        // Random data2 = new Random(2);
+        // for (int i = 0; i < 5; i++) {
+        //         e[i]=data2.nextInt();
+        //         System.out.println(e[i]+" ");
+        //     }
+        //     bubbleSort(e);
+        //     for (int i = 0; i < 5; i++) {
+        //             System.out.print(e[i] + " ");
+        //         }
+
     }
   }
