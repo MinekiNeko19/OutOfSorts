@@ -1,3 +1,5 @@
+import java.util.Random;
+
 public class Sorts{
     /**Bubble sort of an int array. 
     *@postcondition The array will be modified such that the elements will be in increasing order.
@@ -44,5 +46,16 @@ public class Sorts{
 
         // int[] c = new int[0];
         // bubbleSort(c);
+
+        int[] d = new int[5];
+        Random data1 = new Random(); // no seed
+        for (int i = 0; i < 5; i++) {
+            d[i]=data1.nextInt();
+            System.out.println(d[i]+" ");
+        }
+        bubbleSort(d);
+        for (int i = 0; i < 5; i++) {
+                System.out.print(d[i] + " ");
+            }
     }
   }
