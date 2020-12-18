@@ -1,4 +1,5 @@
 import java.util.Random;
+import java.util.Arrays;
 
 public class Sorts{
     /**Bubble sort of an int array. 
@@ -20,6 +21,25 @@ public class Sorts{
                 }
             }
         }
+    }
+
+    public static void selectionSort(int[] data){
+        for (int i = 0; i < data.length; i++) {
+            int compare = data[i];
+            int temp = i;
+            for (int j = i+1; j < data.length; j++) {
+                if (compare > data[j]) {
+                    temp = j;
+                    compare = data[j];
+                }
+            }
+            data[temp] = data[i];
+            data[i] = compare;
+        }
+    }
+
+    public static void insertionSort(int[] data) {
+
     }
 
     public static void main(String[] args) {
@@ -69,5 +89,11 @@ public class Sorts{
         //             System.out.print(e[i] + " ");
         //         }
 
+        // Testing selection sort
+        int[] b = new int[]{23,12,90,3,4};
+        selectionSort(b);
+        for (int i = 0; i < 5; i++) {
+            System.out.print(b[i] + " ");
+        }
     }
   }
