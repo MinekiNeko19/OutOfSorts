@@ -90,7 +90,7 @@ public class Sorts{
         //         }
 
         // Testing selection sort
-        int[] b = new int[]{23,12,90,3,4};
+        int[] b = new int[]{0,0,0,0,0};
         selectionSort(b);
         for (int i = 0; i < 5; i++) {
             System.out.print(b[i] + " ");
