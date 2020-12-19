@@ -39,7 +39,15 @@ public class Sorts{
     }
 
     public static void insertionSort(int[] data) {
-
+        for (int i = 0; i < data.length;i++) {
+            int moving = data[i];
+            for (int j = i-1; j >= 0; j--) {
+                if (moving < data[j]) {
+                    data[j+1] = data[j];
+                    data[j] = moving;
+                }
+            }
+        }
     }
 
     public static void main(String[] args) {
@@ -90,8 +98,15 @@ public class Sorts{
         //         }
 
         // Testing selection sort
-        int[] b = new int[]{0,0,0,0,0};
-        selectionSort(b);
+        // int[] b = new int[]{0,0,0,0,0};
+        // selectionSort(b);
+        // for (int i = 0; i < 5; i++) {
+        //     System.out.print(b[i] + " ");
+        // }
+
+        //Testing insertion sort
+        int[] b = new int[]{23,12,90,3,4};
+        insertionSort(b);
         for (int i = 0; i < 5; i++) {
             System.out.print(b[i] + " ");
         }
