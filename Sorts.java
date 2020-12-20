@@ -41,11 +41,9 @@ public class Sorts{
     public static void insertionSort(int[] data) {
         for (int i = 0; i < data.length;i++) {
             int moving = data[i];
-            for (int j = i-1; j >= 0; j--) {
-                if (moving < data[j]) {
-                    data[j+1] = data[j];
-                    data[j] = moving;
-                }
+            for (int j = i-1; j >= 0 && moving < data[j]; j--) {
+                data[j+1] = data[j];
+                data[j] = moving;
             }
         }
     }
@@ -105,10 +103,15 @@ public class Sorts{
         // }
 
         //Testing insertion sort
-        int[] b = new int[]{23,12,90,3,4};
-        insertionSort(b);
-        for (int i = 0; i < 5; i++) {
-            System.out.print(b[i] + " ");
-        }
+        // int[] b = new int[]{0,23,12,90,3,4,0,0,4};
+        // insertionSort(b);
+        // for (int i = 0; i < b.length; i++) {
+        //     System.out.print(b[i] + " ");
+        // }
+
+        // Random data3 = new Random(3);
+        // int[] c = new int[25];
+        // insertionSort(c);
+        // bubbleSort(c);
     }
   }
