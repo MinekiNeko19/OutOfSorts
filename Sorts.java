@@ -110,7 +110,10 @@ public class Sorts{
         // }
 
         // Random data3 = new Random(3);
-        // int[] c = new int[25];
+        // int[] c = new int[40000];
+        // for (int i = 0; i < c.length; i++) {
+        //     c[i] = data3.nextInt();
+        // }
         // insertionSort(c);
         // bubbleSort(c);
     }
