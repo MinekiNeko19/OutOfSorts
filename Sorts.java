@@ -116,5 +116,12 @@ public class Sorts{
         // }
         // insertionSort(c);
         // bubbleSort(c);
+
+        // int[] d = new int[100];
+        // for (int i = 0; i < d.length; i++) {
+        //     d[i] = i;
+        // }
+        // insertionSort(d);
+        // bubbleSort(d);
     }
   }
