@@ -8,16 +8,11 @@ public class Sorts{
     */
     public static void bubbleSort(int[] data){
         for (int i = 0; i < data.length; i++) {
-            int a = 0;
-            int b = 0;
-            int c = 0;
             for (int j = 0; j < data.length-i-1; j++) {
-                a = data[j];
-                b = data[j+1];
-                if (a > b) {
-                    c = data[j+1];
-                    data[j+1] = a;
-                    data[j] = c;
+                if (data[j+1] < data[j]) {
+                    int temp = data[j+1];
+                    data[j+1] = data[j];
+                    data[j] = temp;
                 }
             }
         }
