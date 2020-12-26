@@ -7,7 +7,7 @@ public class Sorts{
     *@param data  the elements to be sorted.
     */
     public static void bubbleSort(int[] data){
-        for (int i = 0; i < data.length; i++) {
+        for (int i = 0; i < data.length-1; i++) {
             for (int j = 0; j < data.length-i-1; j++) {
                 if (data[j+1] < data[j]) {
                     int temp = data[j+1];
@@ -19,7 +19,7 @@ public class Sorts{
     }
 
     public static void selectionSort(int[] data){
-        for (int i = 0; i < data.length; i++) {
+        for (int i = 0; i < data.length-1; i++) {
             int compare = data[i];
             int temp = i;
             for (int j = i+1; j < data.length; j++) {
