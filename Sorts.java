@@ -20,14 +20,13 @@ public class Sorts{
 
     public static void selectionSort(int[] data){
         for (int i = 0; i < data.length-1; i++) {
-            int compare = data[i];
             int temp = i;
             for (int j = i+1; j < data.length; j++) {
-                if (compare > data[j]) {
+                if (data[temp] > data[j]) {
                     temp = j;
-                    compare = data[j];
                 }
             }
+            int compare = data[temp];
             data[temp] = data[i];
             data[i] = compare;
         }
